@@ -42,18 +42,17 @@
 
 - (void)addLocationNotification8{// 创建一个本地推送
     
-    
     //1.创建消息上面要添加的动作(按钮的形式显示出来)
     UIMutableUserNotificationAction *action = [[UIMutableUserNotificationAction alloc] init];
     action.identifier = @"action";//按钮的标示
-    action.title=@"Accept";//按钮的标题
+    action.title=@"确定";//按钮的标题
     action.activationMode = UIUserNotificationActivationModeForeground;//当点击的时候启动程序
     //    action.authenticationRequired = YES;
     //    action.destructive = YES;
     
     UIMutableUserNotificationAction *action2 = [[UIMutableUserNotificationAction alloc] init];//第二按钮
     action2.identifier = @"action2";
-    action2.title=@"Reject";
+    action2.title=@"取消";
     action2.activationMode = UIUserNotificationActivationModeBackground;//当点击的时候不启动程序，在后台处理
     action.authenticationRequired = YES;
     //需要解锁才能处理，如果action.activationMode = UIUserNotificationActivationModeForeground;则这个属性被忽略；
@@ -107,11 +106,21 @@
     NSLog(@"%@",notification);
 
 }
+//在非本App界面时收到本地消息，下拉消息会有快捷回复的按钮，点击按钮后调用的方法，根据identifier来判断点击的哪个按钮，notification为消息内容
 -(void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void (^)())completionHandler
 {
-    //在非本App界面时收到本地消息，下拉消息会有快捷回复的按钮，点击按钮后调用的方法，根据identifier来判断点击的哪个按钮，notification为消息内容
-    NSLog(@"%@----%@",identifier,notification);
+//    NSLog(@"%@----%@",identifier,notification);
     
+    if([@"action" isEqualToString:identifier]){
+        
+        NSLog(@"%@----%@",identifier,notification);
+
+    }
+    if([@"action2" isEqualToString:identifier]){
+        
+        NSLog(@"%@----%@",identifier,notification);
+        
+    }
     
     completionHandler();//处理完消息，最后一定要调用这个代码块
 }

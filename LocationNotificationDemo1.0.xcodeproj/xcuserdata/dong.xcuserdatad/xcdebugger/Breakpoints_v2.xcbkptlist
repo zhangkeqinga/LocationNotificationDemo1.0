@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LocationNotificationDemo1.0/AppDelegate.m"
-            timestampString = "442032639.584802"
+            timestampString = "442047370.795868"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "-application:handleActionWithIdentifier:forLocalNotification:completionHandler:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,12 +26,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LocationNotificationDemo1.0/AppDelegate.m"
-            timestampString = "442032639.584802"
+            timestampString = "442047371.624752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-application:didReceiveLocalNotification:"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "-application:handleActionWithIdentifier:forLocalNotification:completionHandler:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocationNotificationDemo1.0/AppDelegate.m"
+            timestampString = "442047372.712359"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "-application:handleActionWithIdentifier:forLocalNotification:completionHandler:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
